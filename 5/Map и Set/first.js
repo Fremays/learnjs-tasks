@@ -1,0 +1,11 @@
+function unique(arr) {
+    let result = new Set(arr)
+
+    return Array.from(result)
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(values) ); // Hare,Krishna,:-O
